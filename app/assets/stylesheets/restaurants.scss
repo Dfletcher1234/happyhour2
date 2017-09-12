@@ -1,0 +1,41 @@
+// Place all the styles related to the Restaurants controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+h1 {
+  text-shadow: 0 0 10px pink,
+  0 0 20px #fff,
+  0 0 30px #fff,
+  0 0 40px #ff00de,
+  0 0 70px #ff00de,
+  0 0 80px #ff00de,
+  0 0 100px #ff00de,
+  0 0 150px yellow;
+  font-size: 100px;
+  text-align: center;
+
+}
+body{
+  background-color: black;
+  border-color: white;
+
+
+}
+
+
+input[value="Search"]{
+  background-color: black;
+  width: 150px;
+  height: 75px;
+  font-size: 30px;
+  color: white;
+
+}
+input[id="search"]{
+  width: 500px;
+  color: white;
+  height: 75px;
+  font-size: 30px;
+  padding-left: 30px;
+  margin-left: 200px;
+  background-color: black;
+}
