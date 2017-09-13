@@ -28,14 +28,77 @@ input[value="Search"]{
   height: 75px;
   font-size: 30px;
   color: white;
+  position: inherit;
+  // margin-right: auto;
 
 }
 input[id="search"]{
-  width: 500px;
+  width: 75%;
   color: white;
   height: 75px;
   font-size: 30px;
-  padding-left: 30px;
-  margin-left: 200px;
+  padding-left: 50px;
+  margin-left: 40px;
   background-color: black;
+  position: inherit;
+
+}
+.buttons{
+  vertical-align: middle;
+  margin-left: 100px;
+  padding-top: 15px;
+  padding-left: 30px;
+  color: #878787;
+  font-size: 20px
+
+
+
+}
+
+
+
+
+
+  input[type="checkbox"]{
+    position: relative;
+}
+
+
+
+
+@media only screen and (max-width: 500px) {
+    body {
+        background-color: black;
+    }
+
+    input[id="search"]{
+      width: auto;
+      color: white;
+      height: 20px;
+      font-size: 1em;
+      padding-left: 30px;
+      margin-left: auto;
+      background-color: black;
+    }
+
+    input[value="Search"]{
+      background-color: black;
+      width: auto;
+      height: 1.5em;
+      font-size: 1em;
+      color: white;
+
+    }
+
+    .buttons{
+      display: inline-block;
+      margin-left: 1px;
+      padding-top: 5px;
+      padding-left: 2px;
+      color: #878787;
+      font-size: 20px
+      }
+
+
+
 }

@@ -13,14 +13,15 @@ def index
   @restaurants = Restaurant.all
   if params[:search]
     @restaurants = Restaurant.search(params[:search]).order("name DESC")
-  else
+    else
     @restaurants = Restaurant.all.order("name DESC")
+
   end
 end
 
 
 def show
-@restaurants = Restaurant.all
+# @restaurants = Restaurant.all
 
 end
 

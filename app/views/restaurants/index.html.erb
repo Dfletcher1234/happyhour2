@@ -1,6 +1,16 @@
 <h1>TEST</h1>
 
 <% @restaurants.each do |res| %>
-<%= res.name %> 
+<%= res.name %>
 
  <% end %>
+
+ <% if @restaurants.blank? %>
+   <h4>There are no restaurants in  <%= params[:search] %>.</h4>
+ <% end %>
+
+
+ <%= check_box_tag(:pet_dog) %>
+   <%= label_tag(:pet_dog, "I own a dog") %>
+ <%= check_box_tag(:pet_cat) %>
+   <%= label_tag(:pet_cat, "I own a cat") %>
