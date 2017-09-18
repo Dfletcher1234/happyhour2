@@ -1,6 +1,7 @@
-<h1>TEST</h1>
+<h1>HAPPY RESTAURANTS</h1>
+<div class = "restaurants">
 
-<% @restaurants.each do |res| %>
+<%@restaurants.each do |res| %>
 <%= res.name %>
 
  <% end %>
@@ -9,8 +10,4 @@
    <h4>There are no restaurants in  <%= params[:search] %>.</h4>
  <% end %>
 
-
- <%= check_box_tag(:pet_dog) %>
-   <%= label_tag(:pet_dog, "I own a dog") %>
- <%= check_box_tag(:pet_cat) %>
-   <%= label_tag(:pet_cat, "I own a cat") %>
+</div>

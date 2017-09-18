@@ -55,7 +55,10 @@ input[id="search"]{
 
 }
 
+.restaurants{
+color: white;
 
+}
 
 
 
@@ -91,7 +94,7 @@ input[id="search"]{
     }
 
     .buttons{
-      display: inline-block;
+      display: list-item;
       margin-left: 1px;
       padding-top: 5px;
       padding-left: 2px;
