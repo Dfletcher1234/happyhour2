@@ -2,12 +2,12 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 h1 {
-  text-shadow: 0 0 10px pink,
+  text-shadow: 0 0 10px purple,
   0 0 20px #fff,
   0 0 30px #fff,
   0 0 40px #ff00de,
   0 0 70px #ff00de,
-  0 0 80px #ff00de,
+  0 0 80px blue,
   0 0 100px #ff00de,
   0 0 150px yellow;
   font-size: 100px;
@@ -66,8 +66,28 @@ color: white;
     position: relative;
 }
 
+.restaurants p{
+  display: inline;
+  margin-top: 3em;
+}
 
+.restaurants{
+  padding-left: 2em;
+  padding-top: 3em;
+  font-size: 30px;;
+}
 
+h4{
+text-align: center;
+
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
 
 @media only screen and (max-width: 500px) {
     body {
@@ -102,6 +122,37 @@ color: white;
       font-size: 20px
       }
 
+    .restaurants{
+      font-size: 12px;
 
+    }
+
+    input[id="search"]{
+      width: auto;
+      color: white;
+      height: 20px;
+      font-size: 12px;
+      padding-left: 10px;
+      margin-left: auto;
+      background-color: black;
+    }
+
+    H1 {
+      text-shadow: 0 0 10px purple,
+      0 0 20px #fff,
+      0 0 30px #fff,
+      0 0 40px #ff00de,
+      0 0 70px #ff00de,
+      0 0 80px blue,
+      0 0 100px #ff00de,
+      0 0 150px yellow;
+      font-size: 45px;
+      text-align: center;}
+
+      img{
+      max-width: 75px;
+      max-height: 75px;
+
+      }
 
 }

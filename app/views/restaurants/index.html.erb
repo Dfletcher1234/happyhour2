@@ -1,13 +1,21 @@
 <h1>HAPPY RESTAURANTS</h1>
 <div class = "restaurants">
 
-<%@restaurants.each do |res| %>
-<%= res.name %>
+<% @restaurants.each do |res| %>
+  <li><p> <%= link_to res.name, "http://#{res.website}", :target => "_blank" %> </p> </li>
+  <p> Address:<%= res.address %> </p> <br>
+  <p> Phone Number:<%= res.telephone %> </p> <br>
+  <p> Days of the week:<%= res.day_of_week%> </p>
 
- <% end %>
+
+<% end %>
 
  <% if @restaurants.blank? %>
    <h4>There are no restaurants in  <%= params[:search] %>.</h4>
+
+<img src="https://media.giphy.com/media/l8XYZYdlOHSrS/giphy.gif" alt="I Love Lucy" style="width:500px;height:500px;">
  <% end %>
+
+
 
 </div>

@@ -12,7 +12,7 @@ end
 def index
   @restaurants = Restaurant.all
   if params[:search]
-    @restaurants = Restaurant.search(params[:search]).order("name DESC")
+    @restaurants = Restaurant.search(params[:search].titlecase).order("name DESC")
     else
     @restaurants = Restaurant.all.order("name DESC")
 
